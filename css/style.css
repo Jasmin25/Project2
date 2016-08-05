@@ -1,0 +1,40 @@
+a {
+  color: #2d3c49;
+  text-decoration: none;
+
+  &:hover {
+    color: #02b3e4;
+    text-decoration: underline;
+  }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #676858;
+    font-weight: 300;
+}
+
+hr {
+    height: 3px;
+    color: #7d97ad;
+    background-color: #7d97ad;
+}
+
+.text-muted {
+    color: #7d97ad;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+
+.title-super {
+    font-size: 60px;
+}
+
+.title-logo {
+    margin-top: 20px;
+    width: 75%;
+    height: 75%;
+}
