@@ -3,18 +3,17 @@
   <head>
     <title>Jasmin Shah's Portfolio</title>
     <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="container">
       <!--First row for logo and name-->
       <div class="row">
         <div class="col-md-2">
-          <img class="title-logo img-responsive" src="img/udacity_logo.png">
+          <img class="title-logo img-responsive" src="img/udacity_logo.png" alt="Logo of my portfolio">
         </div>
         <div class="col-md-10 text-right text-uppercase">
           <h1 class="title-super text-thin">Jasmin Shah</h1>
@@ -28,11 +27,13 @@
         </div>
       </div>
       <!--Third row for large image-->
-      <div class="row">
-        <div class="col-md-12">
-          <img class="img-responsive" src="img/1200_large_1x.jpg" srcset="img/1800_large_2x.jpg 2x, img/1200_large_1x.jpg 1x" alt="My cat">
+      <main role="main">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="img-responsive" src="img/1200_large_1x.jpg" srcset="img/1800_large_2x.jpg 2x, img/1200_large_1x.jpg 1x" alt="My cat">
+          </div>
         </div>
-      </div>
+      </main>
       <!--Fourth row for text-->
       <div class="row">
         <div class="col-md-12">
@@ -40,8 +41,8 @@
         </div>
       </div>
       <!--Fifth row for 3 projects-->
-      <div class="row">
-        <div class="row text-center text-uppercase">
+      <div class="row text-center text-uppercase">
+        <article>
           <div class="col-md-4">
             <img class="img-responsive" src="img/6001_large_1x.jpg" srcset="img/9001_large_2x.jpg 2x, img/6001_large_1x.jpg 1x" alt="My cute cat" data-toggle="modal" data-target="#project1">
             <h3>Appify</h3>
@@ -49,6 +50,8 @@
               Fork, clone or download this amazing project <a href="https://github.com/Jasmin25/appify" target="_blank">here</a>.
             </p>
           </div>
+        </article>
+        <article>
           <div class="col-md-4">
             <img class="img-responsive" src="img/6001_large_1x.jpg" srcset="img/9001_large_2x.jpg 2x, img/6001_large_1x.jpg 1x" alt="My cute cat" data-toggle="modal" data-target="#project2">
             <h3>Sunflower</h3>
@@ -56,6 +59,8 @@
               Fork, clone or download this amazing project <a href="https://github.com/Jasmin25/sunflower" target="_blank">here</a>.
             </p>
           </div>
+        </article>
+        <article>
           <div class="col-md-4">
             <img class="img-responsive" src="img/6001_large_1x.jpg" srcset="img/9001_large_2x.jpg 2x, img/6001_large_1x.jpg 1x" alt="My cute cat" data-toggle="modal" data-target="#project3">
             <h3>Bokeh</h3>
@@ -63,15 +68,20 @@
               Fork, clone or download this amazing project <a href="https://github.com/Jasmin25/bokeh" target="_blank">here</a>.
             </p>
           </div>
-        </div>
+        </article>
       </div>
+      <footer>
+        <div class="col-md-12">
+          <p>Copyright © 2016, All Rights Reserved.</p>
+        </div>
+      </footer>
     </div>
     <!--Modals for clickable images-->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Appify</h4>
+            <h4 class="modal-title" id="myModalLabel1">Appify</h4>
           </div>
           <div class="modal-body">
             <img class="img-responsive" src="img/6001_large_1x.jpg" srcset="img/9001_large_2x.jpg 2x, img/6001_large_1x.jpg 1x" alt="My cute cat">
@@ -84,11 +94,11 @@
       </div>
     </div>
 
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Sunflower</h4>
+            <h4 class="modal-title" id="myModalLabel2">Sunflower</h4>
           </div>
           <div class="modal-body">
             <img class="img-responsive" src="img/6001_large_1x.jpg" srcset="img/9001_large_2x.jpg 2x, img/6001_large_1x.jpg 1x" alt="My cute cat">
@@ -101,11 +111,11 @@
       </div>
     </div>
 
-    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Bokeh</h4>
+            <h4 class="modal-title" id="myModalLabel3">Bokeh</h4>
           </div>
           <div class="modal-body">
             <img class="img-responsive" src="img/6001_large_1x.jpg" srcset="img/9001_large_2x.jpg 2x, img/6001_large_1x.jpg 1x" alt="My cute cat">
@@ -117,6 +127,7 @@
         </div>
       </div>
     </div>
-
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
